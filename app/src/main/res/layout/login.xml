@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/musci_bj">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="150dp">
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:gravity="right"
+        android:textColor="#cc0000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l_userName"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:gravity="right"
+            android:textColor="#cc0000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l_userPassword"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/l_back"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/l_login"
+            android:layout_toStartOf="@+id/l_login"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp" />
+
+        <Button
+
+            android:id="@+id/l_login"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>
